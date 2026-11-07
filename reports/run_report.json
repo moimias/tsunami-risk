@@ -1,0 +1,23 @@
+{
+  "pipeline": "tsunami-risk",
+  "executed_at": "2026-11-07T22:05:57.359424+00:00",
+  "source_file": "source_20261107T215457Z.json",
+  "input_rows": 5535,
+  "accepted_rows": 5535,
+  "rejected_rows": 0,
+  "duplicates_removed": 0,
+  "rule_failures": {
+    "R1_completude_event_id": 0,
+    "R2_validite_date": 0,
+    "R3_domaine_magnitude": 0,
+    "R4_domaine_coordonnees": 0,
+    "R5_domaine_profondeur": 0,
+    "R6_unicite_event_id": 0
+  },
+  "warnings": [],
+  "curated_total_rows": 5535,
+  "new_rows_added_to_curated": 0,
+  "risk_cells": 283,
+  "quality_status": "PASS",
+  "duration_seconds": 0.34
+}

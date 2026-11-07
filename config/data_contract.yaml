@@ -1,0 +1,20 @@
+dataset: seismes_usgs_curated
+version: 1.0
+grain: une ligne represente un seisme enregistre par l'USGS (un event_id)
+owner: etudiant_ESEO
+business_key: event_id
+required_fields:
+  - event_id
+  - observed_at
+  - magnitude
+  - latitude
+  - longitude
+  - depth_km
+quality_rules:
+  - R1 event_id ne doit pas etre vide (rejet)
+  - R2 observed_at doit etre une date valide (rejet)
+  - R3 magnitude doit etre entre 0 et 10 (rejet)
+  - R4 latitude dans [-90,90] et longitude dans [-180,180] (rejet)
+  - R5 depth_km entre -5 et 800 (rejet)
+  - R6 event_id unique (deduplication, comptage)
+  - R7 fichier raw de moins de 7 jours (alerte)

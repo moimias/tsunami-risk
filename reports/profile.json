@@ -1,0 +1,44 @@
+{
+  "rows": 5535,
+  "columns": 10,
+  "dtypes": {
+    "event_id": "string",
+    "observed_at": "datetime64[us, UTC]",
+    "magnitude": "float64",
+    "mag_type": "str",
+    "place": "str",
+    "tsunami_flag": "int64",
+    "status": "str",
+    "latitude": "float64",
+    "longitude": "float64",
+    "depth_km": "float64"
+  },
+  "missing_rate": {
+    "event_id": 0.0,
+    "observed_at": 0.0,
+    "magnitude": 0.0,
+    "mag_type": 0.0,
+    "place": 0.0,
+    "tsunami_flag": 0.0,
+    "status": 0.0,
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "depth_km": 0.0
+  },
+  "duplicates_event_id": 0,
+  "magnitude_min_max": [
+    6.0,
+    9.1
+  ],
+  "depth_min_max": [
+    -0.097,
+    688.0
+  ],
+  "top_mag_type": {
+    "mww": 2102,
+    "mwc": 1588,
+    "mwb": 924,
+    "mw": 733,
+    "mb": 137
+  }
+}
